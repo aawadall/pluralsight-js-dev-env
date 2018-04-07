@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "JavaScript developent environment Pluralsight course by Cory House",
   "scripts": {
-
+    "preinstall": "nsp check"
   },
   "author": "Cory House",
   "license": "MIT",
