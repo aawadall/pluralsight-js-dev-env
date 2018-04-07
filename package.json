@@ -1,0 +1,40 @@
+{
+  "name": "javascript-development-environment",
+  "version": "1.0.0",
+  "description": "JavaScript developent environment Pluralsight course by Cory House",
+  "scripts": {
+
+  },
+  "author": "Cory House",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-latest": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chalk": "^2.3.2",
+    "cheerio": "^1.0.0-rc.2",
+    "cross-env": "^5.1.4",
+    "eslint": "*",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-watch": "^3.1.4",
+    "express": "^4.16.3",
+    "html-webpack-plugin": "^3.2.0",
+    "jsdom": "^11.7.0",
+    "localtunnel": "^1.9.0",
+    "mocha": "^5.0.5",
+    "nock": "^9.2.3",
+    "npm-run-all": "^4.1.2",
+    "nsp": "^3.2.1",
+    "numeral": "^2.0.6",
+    "open": "^0.0.5",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.5.0",
+    "webpack-dev-middleware": "^3.1.2",
+    "webpack-hot-middleware": "^2.21.2",
+    "webpack-md5-hash": "^0.0.6"
+  }
+}
