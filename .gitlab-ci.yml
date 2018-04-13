@@ -1,5 +1,9 @@
-image: node:5
-
+image: 
+  - node:5
+  - node:6 
+  - node:7
+  - node:8
+  - node:9
 cache:
   paths:
   - node_modules/
@@ -13,62 +17,3 @@ test_async:
    - npm install
    - npm run test
 
-image: node:6
-
-cache:
-  paths:
-  - node_modules/
-
-stages:
-  - test
-
-test_async:
-  stage: test
-  script:
-   - npm install
-   - npm run test
-
-image: node:7
-
-cache:
-  paths:
-  - node_modules/
-
-stages:
-  - test
-
-test_async:
-  stage: test
-  script:
-   - npm install
-   - npm run test
-
-image: node:8
-
-cache:
-  paths:
-  - node_modules/
-
-stages:
-  - test
-
-test_async:
-  stage: test
-  script:
-   - npm install
-   - npm run test
-
-image: node:9
-
-cache:
-  paths:
-  - node_modules/
-
-stages:
-  - test
-
-test_async:
-  stage: test
-  script:
-   - npm install
-   - npm run test
