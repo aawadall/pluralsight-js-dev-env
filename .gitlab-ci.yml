@@ -1,14 +1,62 @@
-image: node:9
-cache:
-  paths:
-  - node_modules/
-
 stages:
-  - test
+  - node5_test
+  - node6_test
+  - node7_test
+  - node8_test
+  - node9_test
+  
+node5_test:
+    stage: node5_test
+    image: node:5
+    services:
+        - docker:stable-dind
+    script:
+        - npm install
+        - npm run test
+    only:
+        - master
 
-test_async:
-  stage: test
-  script:
-   - npm install
-   - npm run test
+node6_test:
+    stage: node6_test
+    image: node:6
+    services:
+        - docker:stable-dind
+    script:
+        - npm install
+        - npm run test
+    only:
+        - master
+
+node7_test:
+    stage: node7_test
+    image: node:7
+    services:
+        - docker:stable-dind
+    script:
+        - npm install
+        - npm run test
+    only:
+        - master
+
+node8_test:
+    stage: node8_test
+    image: node:8
+    services:
+        - docker:stable-dind
+    script:
+        - npm install
+        - npm run test
+    only:
+        - master
+
+node9_test:
+    stage: node9_test
+    image: node:9
+    services:
+        - docker:stable-dind
+    script:
+        - npm install
+        - npm run test
+    only:
+        - master
 
