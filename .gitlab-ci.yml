@@ -1,9 +1,4 @@
-image: 
-  - node:5
-  - node:6 
-  - node:7
-  - node:8
-  - node:9
+image: node:9
 cache:
   paths:
   - node_modules/
