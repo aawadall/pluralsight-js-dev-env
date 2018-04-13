@@ -59,4 +59,3 @@ node9_test:
         - npm run test
     only:
         - master
-
