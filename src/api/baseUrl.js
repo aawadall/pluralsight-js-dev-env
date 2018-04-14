@@ -11,7 +11,7 @@ function getQueryStringParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
     console.log(chalk.blue(`name replaced to: ${name}`));
-    const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$"),
+    const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
         results = regex.exec(url);
     console.log(chalk.blue(`results set to: ${results}`));
     if (!results) return null;
