@@ -5,16 +5,15 @@ import chalk from 'chalk';
 
 process.env.NODE_ENV = 'production';
 
+console.log(chalk.blue('Generating minified bundle for production.'));
+console.log(chalk.blue('This will take a moment...'));
 
-// If we have reached here then it should be a success
-console.log(chalk.green('Application built for production and and written to /dist'));
+
 webpack(webpackConfig).run((err, stats) => {
    if (err) { // Fatal Error, Stop here
        console.log(chalk.red(err));
        return 1;
    }
-    console.log(chalk.blue('Generating minified bundle for production.'));
-    console.log(chalk.blue('This will take a moment...'));
 
     const jsonStats = stats.toJson();
 
@@ -28,6 +27,9 @@ webpack(webpackConfig).run((err, stats) => {
     }
 
     console.log(`Webpack Stats: ${stats}`);
+
+    // If we have reached here then it should be a success
+    console.log(chalk.green('Application built for production and and written to /dist'));
 
     return 0;
 });
