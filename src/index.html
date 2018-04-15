@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello Express</title>
+    <!-- BEGIN TRACKJS -->
+    <% if (htmlWebpackPlugin.options.trackJSToken) {%>
+    <script type="text/javascript">window._trackJs = { token: '<%=htmlWebpackPlugin.options.trackJSToken%>' };</script>
+    <script type="text/javascript" src="https://cdn.trackjs.com/releases/current/tracker.js"></script>
+    <!-- END TRACKJS -->
+    <% } %>
 </head>
 <body>
 
