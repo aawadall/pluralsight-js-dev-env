@@ -26,7 +26,7 @@
   "author": "Cory House",
   "license": "MIT",
   "dependencies": {
-    "npm": "^5.8.0",
+    "npm": "^9.2.0",
     "whatwg-fetch": "1.0.0"
   },
   "devDependencies": {
